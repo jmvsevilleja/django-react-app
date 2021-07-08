@@ -5,12 +5,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Install
+## Install React App
 
 ```
 npx create-react-app django-react-app
 cd django-react-app
 npm start
+```
+## Install Apollo Client
+Apollo is a platform for building a data graph, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services.
+[documentation](https://www.apollographql.com/docs/react/get-started/)
+
+```
+npm install @apollo/client graphql
 ```
 
 ## HEROKU
@@ -26,5 +33,8 @@ npm start
 - [ ] Complete Todo
 - [ ] Like Todo
 - [ ] Search Todo
+- [ ] Add Tags assigned to Todo
+- [ ] Add exisiting tags to todo
+- [ ] Filter Todo list by Tags
 - [ ] Dockerize this app
 - [ ] Make React Production Ready

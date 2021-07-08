@@ -1,8 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  useQuery,
+  gql
+} from "@apollo/client";
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
+const client = new ApolloClient({
+  uri: 'https://jess-django-react-api.herokuapp.com/graphql/',
+  // uri: 'http://localhost:8000/graphql/',
+  cache: new InMemoryCache()
+});
+
+client
+  .query({
+    query: gql`
+    {
+      todoField(search:"jess"){
+        id
+        title
+        description
+        url
+        createdAt
+        completed
+        postedBy {
+          username
+        }
+        likeField{
+           id
+           userField {
+            username
+          }
+        }
+      }
+    }
+    `
+  })
+  .then(result => console.log(result));
 
 ReactDOM.render(
   <React.StrictMode>
