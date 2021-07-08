@@ -19,7 +19,9 @@ Apollo is a platform for building a data graph, a communication layer that seaml
 ```
 npm install @apollo/client graphql
 ```
-
+npm install @fortawesome/fontawesome-free
+npm install reactstrap
+npm install boostrap
 ## HEROKU
 
 -   [Deployment Guide](https://blog.heroku.com/deploying-react-with-zero-configuration) - Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
