@@ -21,10 +21,10 @@ npm start
 
 ## TODO
 
--   [] Login Feature
--   [] Todo CRUD
--   [] Complete Todo
--   [] Like Todo
--   [] Search Todo
--   [] Dockerize this app
--   [] Make React Production Ready
+- [] Login Feature
+- [] Todo CRUD
+- [] Complete Todo
+- [] Like Todo
+- [] Search Todo
+- [] Dockerize this app
+- [] Make React Production Ready
